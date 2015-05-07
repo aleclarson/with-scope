@@ -1,0 +1,16 @@
+{
+  "name": "with-scope",
+  "description": "Expose the properties of a given `Object` as local variables to a given `Function`.",
+  "version": "1.0.0",
+  "main": "js/src/index.js",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "aleclarson/grunt-contrib-coffee",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleclarson/with-scope"
+  }
+}
