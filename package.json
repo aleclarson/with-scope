@@ -1,8 +1,14 @@
 {
   "name": "with-scope",
   "description": "Expose the properties of a given `Object` as local variables to a given `Function`.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "js/src/index.js",
+  "scripts": {
+    "test": "jasmine-node --matchall --verbose js/spec"
+  },
+  "dependencies": {
+    "var-statement": "aleclarson/var-statement#1.0.0"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-coffee": "aleclarson/grunt-contrib-coffee",
