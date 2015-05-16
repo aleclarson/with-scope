@@ -1,7 +1,7 @@
 (function() {
   describe("withScope(Object, Function)", function() {
     var withScope;
-    withScope = require("../..");
+    withScope = require("../..").withScope;
     it("exposes an object's properties as local variables", function() {
       var scope;
       scope = {

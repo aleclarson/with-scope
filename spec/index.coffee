@@ -1,7 +1,7 @@
 
 describe "withScope(Object, Function)", ->
 
-  withScope = require "../.."
+  { withScope } = require "../.."
 
   it "exposes an object's properties as local variables", ->
     scope = foo: yes

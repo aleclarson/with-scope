@@ -1,13 +1,14 @@
 {
   "name": "with-scope",
   "description": "Expose the properties of a given `Object` as local variables to a given `Function`.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "js/src/index.js",
   "scripts": {
     "test": "jasmine-node --matchall --verbose js/spec"
   },
   "dependencies": {
-    "var-statement": "aleclarson/var-statement#1.0.0"
+    "lotus-require": "aleclarson/lotus-require#1.0.0",
+    "var-statement": "aleclarson/var-statement#1.0.1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
