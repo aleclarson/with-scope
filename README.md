@@ -1,10 +1,10 @@
 
-# with-scope v1.0.2 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
+# with-scope v1.0.3 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
 Expose the properties of a given `Object` as local variables to a given `Function`.
 
 ```sh
-npm install aleclarson/with-scope#1.0.2
+npm install aleclarson/with-scope#1.0.3
 ```
 
 usage
@@ -40,10 +40,12 @@ npm test
 changelog
 ---------
 
-#### 1.0.2
+#### 1.0.3
 
 &nbsp;&nbsp;
-**\+** Removed accidental relative module path
+**\+** Removed accidental `require "../../../lotus-require"`!
+
+#### 1.0.2
 
 &nbsp;&nbsp;
 **\+** Minor code structure changes

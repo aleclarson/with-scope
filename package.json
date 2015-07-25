@@ -1,7 +1,7 @@
 {
   "name": "with-scope",
   "description": "Expose the properties of a given `Object` as local variables to a given `Function`.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "js/src/index.js",
   "scripts": {
     "test": "jasmine-node --matchall --verbose js/spec"

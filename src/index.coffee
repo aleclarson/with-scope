@@ -1,9 +1,9 @@
 
-require "../../../lotus-require"
+require "lotus-require"
 VarStatement = require "var-statement"
 
 exports = module.exports =
-  
+
   withScope: (scope, args..., fn) ->
     exports.bindScope(scope, fn).apply this, args
 
