@@ -1,61 +1,15 @@
 
-# with-scope v1.0.3 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
+# with-scope 1.0.4 ![stable](https://img.shields.io/badge/stability-stable-4EBA0F.svg?style=flat)
 
 Expose the properties of a given `Object` as local variables to a given `Function`.
 
-```sh
-npm install aleclarson/with-scope#1.0.3
-```
-
-usage
------
-
-```CoffeeScript
+```coffee
 { withScope, bindScope } = require "with-scope"
 
-withScope { hello: "world" }, ->
-  console.log hello
+result = withScope { hello: "world" }, -> hello
+result # => "world"
 
-withScope.call { foo: 1 }, { bar: 2 }, 3, (dog) ->
-  console.log @foo
-  console.log bar
-  console.log dog
-
-myFunc = bindScope { hello: "world" }, (before) ->
-  return before + hello
-
-myFunc "hello " # "hello world"
+callScope = bindScope { hello: "world" }, (before) -> before + hello
+result = callScope "hello "
+result # => "hello world"
 ```
-
-tests
------
-
-All tests are passing! Find out for yourself:
-
-```sh
-npm install -g jasmine-node
-npm test
-```
-
-changelog
----------
-
-#### 1.0.3
-
-&nbsp;&nbsp;
-**\+** Removed accidental `require "../../../lotus-require"`!
-
-#### 1.0.2
-
-&nbsp;&nbsp;
-**\+** Minor code structure changes
-
-#### 1.0.1
-
-&nbsp;&nbsp;
-**\+** CoffeeScript support
-
-#### 1.0.0
-
-&nbsp;&nbsp;
-**\+** Initial release
