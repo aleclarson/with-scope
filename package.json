@@ -1,9 +1,9 @@
 {
   "name": "with-scope",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "js/src/index",
   "dependencies": {
-    "var-statement": "aleclarson/var-statement#1.0.1"
+    "var-statement": "aleclarson/var-statement#2.0.0"
   },
   "repository": {
     "type": "git",

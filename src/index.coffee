@@ -1,5 +1,4 @@
 
-require "lotus-require"
 VarStatement = require "var-statement"
 
 withScope = (scope, fn) ->

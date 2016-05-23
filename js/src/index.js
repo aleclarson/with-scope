@@ -1,7 +1,5 @@
 var VarStatement, bindScope, cleanCoffeeScriptVars, isCoffeeScriptGenerated, withScope;
 
-require("lotus-require");
-
 VarStatement = require("var-statement");
 
 withScope = function(scope, fn) {
