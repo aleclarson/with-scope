@@ -1,0 +1,17 @@
+{
+  "name": "with-scope",
+  "version": "1.0.5",
+  "main": "js/src/index",
+  "dependencies": {
+    "var-statement": "aleclarson/var-statement#2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleclarson/with-scope"
+  },
+  "lotus": {
+    "plugins": [
+      "lotus-coffee"
+    ]
+  }
+}
