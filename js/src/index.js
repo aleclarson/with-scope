@@ -11,7 +11,7 @@ bindScope = function(scope, fn) {
   scope.__scope = scope;
   keys = Object.keys(scope);
   body = cleanCoffeeScriptVars(keys, fn.toString());
-  return Function.apply(null, keys.concat(["return " + body + ";"])).apply(null, keys.map(function(key) {
+  return Function.apply(null, keys.concat("return " + body + ";")).apply(null, keys.map(function(key) {
     return scope[key];
   }));
 };
@@ -32,4 +32,4 @@ cleanCoffeeScriptVars = function(keys, fn) {
   return fn;
 };
 
-//# sourceMappingURL=../../map/src/index.map
+//# sourceMappingURL=map/index.map

@@ -9,7 +9,7 @@ bindScope = (scope, fn) ->
   keys = Object.keys scope
   body = cleanCoffeeScriptVars keys, fn.toString()
   Function
-    .apply null, keys.concat ["return #{body};"]
+    .apply null, keys.concat "return #{body};"
     .apply null, keys.map (key) -> scope[key]
 
 module.exports = { withScope, bindScope }
