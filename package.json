@@ -1,17 +1,19 @@
 {
   "name": "with-scope",
   "version": "1.0.5",
-  "main": "js/src/index",
+  "main": "js/index",
+  "plugins": [
+    "lotus-coffee"
+  ],
+  "scripts": {
+    "build": "coffee -cb -o js src",
+    "postinstall": "postinstall-build js 'npm run build'"
+  },
   "dependencies": {
+    "postinstall-build": "0.2.x",
     "var-statement": "aleclarson/var-statement#2.0.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/aleclarson/with-scope"
-  },
-  "lotus": {
-    "plugins": [
-      "lotus-coffee"
-    ]
+  "devDependencies": {
+    "coffee-script": "1.9.x"
   }
 }
