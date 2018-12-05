@@ -3,7 +3,7 @@
   "version": "1.0.5",
   "main": "js/src/index",
   "dependencies": {
-    "var-statement": "aleclarson/var-statement#2.0.0"
+    "var-statement": "aleclarson/var-statement#2.0.1"
   },
   "repository": {
     "type": "git",
